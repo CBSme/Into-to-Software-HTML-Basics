@@ -1,4 +1,7 @@
 Initialise: git Initialise
 stage: git add .
 commit git commit -m "worked on my karibu website"
-push: git push 
+push: git push -u origin branch-name
+    ensure : add remote url for repo: git remote add origin url
+     confirm: git remote -v
+     push:
